@@ -6,7 +6,9 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb-base",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -20,7 +22,8 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "rules": {
       "import/extensions": [
@@ -35,7 +38,8 @@
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
-      "no-use-before-define": "off"
+      "no-use-before-define": "off",
+      "prettier/prettier": "error"
     },
     "settings": {
       "import/resolver": {
